@@ -8,16 +8,16 @@ protocol Abstraction{
 //    }
     
 
-    internal struct StringConcatenation_: Abstraction{
-        func concatenateStrings(_ str1: String, _ str2: String) -> String {
+    public struct StringConcatenation_{
+        internal func concatenateStrings(_ str1: String, _ str2: String) -> String {
             return str1 + " " + str2
         }
         
         //    var delegate: Abstraction?
         
-        internal private(set) var text = "Hello, World!"
+        public private(set) var text = "Hello, World!"
         
-        internal init() {
+        public init() {
         }
         
         //     func concatenateStrings(_ str1: String, _ str2: String) -> String {
