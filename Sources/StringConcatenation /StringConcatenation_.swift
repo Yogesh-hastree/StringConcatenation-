@@ -1,10 +1,10 @@
-public struct StringConcatenation_ {
-    public private(set) var text = "Hello, World!"
+fileprivate struct StringConcatenation_ {
+    fileprivate private(set) var text = "Hello, World!"
 
-    public init() {
+    fileprivate init() {
     }
     
-    public func concatenateStrings(_ str1: String, _ str2: String) -> String {
+    fileprivate func concatenateStrings(_ str1: String, _ str2: String) -> String {
         return str1 + " " + str2
     }
 
